@@ -5,8 +5,9 @@
     <updated>2025-07-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alexzerntev.github.io/blog"/>
-    <subtitle>Alex Zerntev Blog</subtitle>
+    <subtitle>Technical insights from a Full Stack Engineer &amp; AI Engineer</subtitle>
     <icon>https://alexzerntev.github.io/img/favicon.ico</icon>
+    <rights>Copyright © 2025 Alex Zerntev</rights>
     <entry>
         <title type="html"><![CDATA[AI survivor guide for DEVs]]></title>
         <id>https://alexzerntev.github.io/blog/ai-survivor-guide-for-devs</id>

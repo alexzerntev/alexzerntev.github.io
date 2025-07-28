@@ -1,0 +1,34 @@
+/* TEAM */
+Developer: Alex Zerntev
+Contact: alexzerntev@gmail.com
+Twitter: @alexzerntev
+GitHub: github.com/alexzerntev
+LinkedIn: linkedin.com/in/alex-zerntev-839415127
+Location: Athens, Greece
+
+/* SITE */
+Last update: 2025/01/28
+Languages: English
+Standards: HTML5, CSS3, JavaScript ES6+, TypeScript
+Components: React, Docusaurus, TailwindCSS
+Software: VS Code, Node.js, Git
+
+/* SKILLS */
+Full Stack Development
+AI Engineering
+Machine Learning
+Data Science
+Query Language Development
+JavaScript, TypeScript
+Python
+Scala
+React, Angular
+GraalVM/Truffle
+AI Agents
+Data Pipelines
+
+/* DESCRIPTION */
+This is the personal portfolio and blog of Alex Zerntev, 
+a Full Stack Engineer and AI Engineer with expertise in 
+modern web technologies, artificial intelligence, and 
+data engineering solutions. 

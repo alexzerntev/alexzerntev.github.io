@@ -250,21 +250,24 @@
 
         .links {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
             margin-top: 20px;
         }
 
         .link-item {
             background: #3498db;
             color: white;
-            padding: 8px 15px;
+            padding: 6px 12px;
             border-radius: 20px;
             text-decoration: none;
-            font-size: 12px;
+            font-size: 11px;
             transition: background 0.3s;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
+            flex: 0 1 auto;
         }
 
         .link-item:hover {
@@ -312,7 +315,7 @@
             <div class="profile-section">
                 <img src="profile.jpg" alt="Alexandros Zerntev" class="profile-image">
                 <h1 class="name">Alexandros Zerntev</h1>
-                <p class="title">Software Engineer - Data Scientist</p>
+                <p class="title">Full Stack Engineer, AI Engineer, Generalist</p>
             </div>
 
             <div class="section">
@@ -355,6 +358,18 @@
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
                         LinkedIn
+                    </a>
+                    <a href="https://alexzerntev.github.io" target="_blank" class="link-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm7.931 9h-2.764a14.67 14.67 0 0 0-1.792-6.243A8.013 8.013 0 0 1 19.931 11zM12.53 4.027c1.035 1.364 2.427 3.78 2.627 6.973H9.03c.2-3.194 1.592-5.609 2.627-6.973A.918.918 0 0 1 12.53 4.027zM2.069 13h2.764a14.67 14.67 0 0 0 1.792 6.243A8.013 8.013 0 0 1 2.069 13zm2.764-2H2.069a8.013 8.013 0 0 1 4.556-6.243A14.67 14.67 0 0 0 4.833 11zM11.47 19.973c-1.035-1.364-2.427-3.78-2.627-6.973h5.673c-.2 3.194-1.592 5.609-2.627 6.973a.918.918 0 0 1-.419 0zm8.487-6.73a14.67 14.67 0 0 0-1.792-6.243 8.013 8.013 0 0 1 4.556 6.243h-2.764z"/>
+                        </svg>
+                        Website
+                    </a>
+                    <a href="https://x.com/alexzerntev" target="_blank" class="link-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        X
                     </a>
                     <a href="https://medium.com/@alexzerntev" target="_blank" class="link-item">
                         <svg viewBox="0 0 24 24" fill="currentColor">
@@ -511,7 +526,7 @@
                 
                 <div class="experience-item">
                     <div class="date">2021 - Present</div>
-                    <div class="job-title">Software Engineer - AI Engineer</div>
+                    <div class="job-title">Full Stack Software Engineer - AI Engineer</div>
                     <div class="company">RAW Labs</div>
                     <div class="description">
                         <span class="projects">Projects:</span> <strong>MXCP</strong> - An MCP production ready framework. <strong>Snapi</strong> (Snippet - API) - functional query language (Parser, semantic analysis, compiler implementation with GraalVM/Truffle), <strong>RAW Platform</strong> - Design, Angular frontend, VS Code extension

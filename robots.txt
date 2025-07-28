@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://alexzerntev.github.io/sitemap.xml
+
+# Allow all bots to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Block common unwanted bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# CV PDF is accessible
+Allow: /cv.pdf
+
+# No crawl delay for legitimate bots
+Crawl-delay: 1 
