@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"AI survivor guide for DEVs","permalink":"/blog/ai-survivor-guide-for-devs","unlisted":false,"date":"2025-07-27T00:00:00.000Z"}]}')}}]);
