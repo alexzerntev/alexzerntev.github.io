@@ -9,9 +9,9 @@
     <icon>https://alexzerntev.github.io/img/favicon.ico</icon>
     <rights>Copyright © 2025 Alex Zerntev</rights>
     <entry>
-        <title type="html"><![CDATA[AI survivor guide for DEVs]]></title>
-        <id>https://alexzerntev.github.io/blog/ai-survivor-guide-for-devs</id>
-        <link href="https://alexzerntev.github.io/blog/ai-survivor-guide-for-devs"/>
+        <title type="html"><![CDATA[Under construction]]></title>
+        <id>https://alexzerntev.github.io/blog/under-construction</id>
+        <link href="https://alexzerntev.github.io/blog/under-construction"/>
         <updated>2025-07-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Under construction.]]></summary>
         <content type="html"><![CDATA[<p>Under construction.</p>]]></content>
@@ -19,6 +19,5 @@
             <name>Alex Zerntev</name>
             <uri>https://alexzerntev.com</uri>
         </author>
-        <category label="AI" term="AI"/>
     </entry>
 </feed>
