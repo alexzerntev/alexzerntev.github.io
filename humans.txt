@@ -3,7 +3,7 @@ Developer: Alex Zerntev
 Contact: alexzerntev@gmail.com
 Twitter: @alexzerntev
 GitHub: github.com/alexzerntev
-LinkedIn: linkedin.com/in/alex-zerntev-839415127
+LinkedIn: linkedin.com/in/alexzerntev
 Location: Athens, Greece
 
 /* SITE */
