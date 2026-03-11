@@ -13,7 +13,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { 
   title, 
   description = 'Alex Zerntev — AI Engineer & Full Stack Engineer. Building production AI systems and scalable platforms. MSc in Data Science & AI.',
-  ogImage = '/alex.png'
+  ogImage = '/og-image.png'
 } = Astro.props;
 const fullTitle = title === 'Alex Zerntev' ? 'Alex Zerntev — AI Engineer & Full Stack Engineer' : `${title} | Alex Zerntev`;
 ---
@@ -83,8 +83,8 @@ const fullTitle = title === 'Alex Zerntev' ? 'Alex Zerntev — AI Engineer & Ful
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-40 animate-fade-in delay-8">
       <div class="max-w-6xl mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
-        <a href="/" class="text-sm tracking-widest uppercase text-[var(--color-text-tertiary)] hover:text-[var(--color-accent)] transition-colors duration-300">
-          AZ
+        <a href="/" class="hover:opacity-80 transition-opacity duration-300" aria-label="Home">
+          <img src="/logo.svg" alt="AZ" class="w-8 h-8" />
         </a>
         <div class="flex items-center gap-6">
           <a
