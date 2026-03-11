@@ -14,12 +14,12 @@
   /* Warm neutrals for text */
   --color-text-primary: #f0ede8;
   --color-text-secondary: #a8a4a0;
-  --color-text-tertiary: #6b6862;
-  --color-text-muted: #45433e;
+  --color-text-tertiary: #8f8a82;
+  --color-text-muted: #7e7971;
 
   /* Warm amber accent */
   --color-accent: #c9a55c;
-  --color-accent-dim: #8b7340;
+  --color-accent-dim: #9a8545;
   --color-accent-bright: #e4c778;
 
   /* Subtle borders */
@@ -257,8 +257,58 @@ html {
 .hero-photo-container {
   position: relative;
   overflow: hidden;
-  border-radius: 1rem;
   background: transparent;
+  /* Dissolve all edges into the page surface */
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent, black 8%, black 74%, transparent),
+    linear-gradient(to right, transparent, black 6%, black 92%, transparent);
+  mask-image:
+    linear-gradient(to bottom, transparent, black 8%, black 74%, transparent),
+    linear-gradient(to right, transparent, black 6%, black 92%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  transition: scale 500ms ease;
+  will-change: translate;
+}
+
+.hero-photo-container:hover {
+  scale: 1.02;
+}
+
+@media (max-width: 640px) {
+  .hero-photo-container {
+    -webkit-mask-image:
+      linear-gradient(to bottom, transparent, black 6%, black 80%, transparent),
+      linear-gradient(to right, transparent, black 6%, black 92%, transparent);
+    mask-image:
+      linear-gradient(to bottom, transparent, black 6%, black 80%, transparent),
+      linear-gradient(to right, transparent, black 6%, black 92%, transparent);
+  }
+}
+
+/* Warm amber tint layer */
+.hero-photo-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(201, 165, 92, 0.08);
+  mix-blend-mode: color;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Dark vignette for depth */
+.hero-photo-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 35%,
+    transparent 20%,
+    rgba(9, 9, 11, 0.45) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-photo {
@@ -266,6 +316,13 @@ html {
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
+  filter: grayscale(0.3) sepia(0.2) brightness(0.88) contrast(1.1) saturate(0.8);
+  opacity: 0.78;
+  transition: filter 500ms ease;
+}
+
+.hero-photo-container:hover .hero-photo {
+  filter: grayscale(0.3) sepia(0.2) brightness(0.9) contrast(1.1) saturate(0.8);
 }
 
 /* ── Section divider ──────────────────────── */

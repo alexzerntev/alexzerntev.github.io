@@ -250,4 +250,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </footer>
 
   </main>
+
+  <script>
+    const photo = document.querySelector<HTMLElement>('.hero-photo-container');
+    if (photo) {
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            const y = Math.min(window.scrollY * 0.06, 30);
+            photo.style.translate = `0 ${y}px`;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    }
+  </script>
 </BaseLayout>
