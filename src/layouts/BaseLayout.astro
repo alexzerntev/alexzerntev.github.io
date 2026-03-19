@@ -1,7 +1,7 @@
 ---
 import '@fontsource-variable/space-grotesk';
-import '@fontsource-variable/inter';
 import '../styles/global.css';
+import { GithubIcon, LinkedinIcon, XTwitterIcon, MediumIcon, EnvelopeIcon } from '../components/Icons';
 
 interface Props {
   title: string;
@@ -10,27 +10,27 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const { 
-  title, 
-  description = 'Alex Zerntev — AI Engineer & Full Stack Engineer. Building production AI systems and scalable platforms. MSc in Data Science & AI.',
+const {
+  title,
+  description = 'Alex Zerntev — AI Engineer & Full Stack Engineer. Building production AI systems and scalable platforms. MSc in Data Science & AI. Published researcher at IEEE IROS.',
   ogImage = '/og-image.png'
 } = Astro.props;
 const fullTitle = title === 'Alex Zerntev' ? 'Alex Zerntev — AI Engineer & Full Stack Engineer' : `${title} | Alex Zerntev`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html class="dark" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- SEO -->
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <meta name="author" content="Alex Zerntev" />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonicalURL} />
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
@@ -39,7 +39,7 @@ const fullTitle = title === 'Alex Zerntev' ? 'Alex Zerntev — AI Engineer & Ful
     <meta property="og:image" content={new URL(ogImage, Astro.site)} />
     <meta property="og:site_name" content="Alex Zerntev" />
     <meta property="og:locale" content="en_US" />
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@alexzerntev" />
@@ -47,11 +47,11 @@ const fullTitle = title === 'Alex Zerntev' ? 'Alex Zerntev — AI Engineer & Ful
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
-    
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
@@ -76,45 +76,91 @@ const fullTitle = title === 'Alex Zerntev' ? 'Alex Zerntev — AI Engineer & Ful
       "knowsAbout": ["AI Engineering", "Full Stack Development", "Data Infrastructure", "Machine Learning", "AI Agents"]
     })} />
   </head>
-  <body class="bg-[var(--color-surface-0)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col antialiased relative overflow-x-hidden">
-    <!-- Noise texture -->
-    <div class="noise-overlay" aria-hidden="true"></div>
+  <body class="bg-background-dark font-display text-slate-100 selection:bg-primary/30">
+    <div class="relative">
+      <!-- Ambient Background Glows -->
+      <div class="hidden md:block fixed top-0 right-0 w-[500px] h-[500px] glow-effect -z-10 translate-x-1/2 -translate-y-1/2 opacity-50 pointer-events-none" aria-hidden="true"></div>
+      <div class="hidden md:block fixed bottom-0 left-0 w-[600px] h-[600px] glow-effect -z-10 -translate-x-1/2 translate-y-1/2 opacity-30 pointer-events-none" aria-hidden="true"></div>
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-40 px-6 md:px-10 animate-fade-in delay-8">
-      <div class="max-w-6xl mx-auto py-5 flex items-center justify-between">
-        <a href="/" class="hover:opacity-80 transition-opacity duration-300" aria-label="Home">
-          <img src="/logo.svg" alt="AZ" class="w-8 h-8" />
-        </a>
-        <div class="flex items-center gap-6">
-          <a
-            href="/blog"
-            class="text-xs tracking-widest uppercase text-[var(--color-text-muted)] hover:text-[var(--color-text-tertiary)] transition-colors duration-300"
-          >
-            Blog
-            <span class="ml-1.5 text-[10px] text-[var(--color-accent-dim)] border border-[var(--color-accent-dim)] rounded px-1 py-px align-middle">Soon</span>
+      <!-- Header -->
+      <header class="sticky top-0 z-50 w-full border-b border-zinc-border bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+          <!-- Logo — typing animation -->
+          <a href="/" class="font-mono text-sm text-primary" aria-label="Home">
+            <span class="typing-text"></span><span class="typing-cursor">▌</span>
           </a>
+          <!-- Desktop nav -->
+          <nav class="hidden md:flex items-center gap-10">
+            <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#expertise">Expertise</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#focus">Focus</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest" href="#quote">Philosophy</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors uppercase tracking-widest flex items-center" href="/blog">Blog <span class="ml-1 text-[9px] border border-primary/40 text-primary/60 rounded px-1 py-px">Soon</span></a>
+          </nav>
+          <!-- Mobile burger -->
+          <button class="md:hidden text-slate-400 hover:text-white transition-colors" id="burger-btn" aria-label="Toggle menu">
+            <svg class="w-6 h-6" id="burger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="w-6 h-6 hidden" id="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
         </div>
-      </div>
-    </nav>
+        <!-- Mobile menu -->
+        <nav class="hidden md:hidden flex-col border-t border-zinc-border bg-background-dark/95 backdrop-blur-md" id="mobile-menu">
+          <a class="block px-6 py-3 text-sm font-medium hover:text-primary hover:bg-white/[0.03] transition-colors uppercase tracking-widest" href="#expertise">Expertise</a>
+          <a class="block px-6 py-3 text-sm font-medium hover:text-primary hover:bg-white/[0.03] transition-colors uppercase tracking-widest" href="#focus">Focus</a>
+          <a class="block px-6 py-3 text-sm font-medium hover:text-primary hover:bg-white/[0.03] transition-colors uppercase tracking-widest" href="#quote">Philosophy</a>
+          <a class="block px-6 py-3 text-sm font-medium hover:text-primary hover:bg-white/[0.03] transition-colors uppercase tracking-widest" href="/blog">Blog <span class="ml-1 text-[9px] border border-primary/40 text-primary/60 rounded px-1 py-px">Soon</span></a>
+        </nav>
+      </header>
 
-    <slot />
-
-    <!-- Scroll reveal script -->
-    <script>
-      const reveals = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
+      <script>
+        const btn = document.getElementById('burger-btn');
+        const menu = document.getElementById('mobile-menu');
+        const burgerIcon = document.getElementById('burger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        btn?.addEventListener('click', () => {
+          const open = menu?.classList.toggle('hidden');
+          menu?.classList.toggle('flex');
+          burgerIcon?.classList.toggle('hidden');
+          closeIcon?.classList.toggle('hidden');
+        });
+        menu?.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            menu?.classList.add('hidden');
+            menu?.classList.remove('flex');
+            burgerIcon?.classList.remove('hidden');
+            closeIcon?.classList.add('hidden');
           });
-        },
-        { threshold: 0.15 }
-      );
-      reveals.forEach((el) => observer.observe(el));
-    </script>
+        });
+      </script>
+
+      <script>
+        const el = document.querySelector('.typing-text');
+        const text = 'Hello World!';
+        let i = 0;
+        function type() {
+          if (el && i <= text.length) {
+            el.textContent = text.slice(0, i);
+            i++;
+            setTimeout(type, 120);
+          }
+        }
+        setTimeout(type, 500);
+      </script>
+
+      <slot />
+
+      <!-- Footer -->
+      <footer class="border-t border-zinc-border py-3">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+          <span class="text-slate-500 text-xs tracking-wider">&copy; 2026 Alex Zerntev</span>
+          <div class="flex items-center gap-5">
+            <a class="text-slate-500 hover:text-white transition-colors" href="https://github.com/alexzerntev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><GithubIcon className="w-4 h-4" client:load /></a>
+            <a class="text-slate-500 hover:text-white transition-colors" href="https://linkedin.com/in/alexzerntev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LinkedinIcon className="w-4 h-4" client:load /></a>
+            <a class="text-slate-500 hover:text-white transition-colors" href="https://x.com/alexzerntev" target="_blank" rel="noopener noreferrer" aria-label="X"><XTwitterIcon className="w-4 h-4" client:load /></a>
+            <a class="text-slate-500 hover:text-white transition-colors" href="https://medium.com/@alexzerntev" target="_blank" rel="noopener noreferrer" aria-label="Medium"><MediumIcon className="w-4 h-4" client:load /></a>
+            <a class="text-slate-500 hover:text-white transition-colors" href="mailto:alexzerntev@gmail.com" aria-label="Email"><EnvelopeIcon className="w-4 h-4" client:load /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
