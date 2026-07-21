@@ -1,0 +1,11 @@
+/* HUMAN */
+Name: Alex Zerntev
+Role: AI Engineer
+Location: Athens, Greece
+LinkedIn: linkedin.com/in/alexzerntev
+GitHub: github.com/alexzerntev
+
+/* SITE */
+Built with: Astro, HTML, CSS, TypeScript
+Language: English
+Last updated: 2026/07/21
