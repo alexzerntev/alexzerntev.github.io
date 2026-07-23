@@ -1,0 +1,25 @@
+# Alex Zerntev
+
+> Personal site and blog of Alex Zerntev, AI Engineer at RAW Labs (Athens, Greece). The work: coding agents in the development loop, AI agents in production, and the engineering judgment in between.
+
+Alex spent four years at RAW Labs across the Snapi query language (parser, semantic analysis, GraalVM/Truffle execution), the RAW web product, and VS Code tooling, and now works on production AI agents and MXCP, a framework for building production MCP servers. Before that: a decade of building document, healthcare, and HR software for the military, which started with service in the Hellenic Air Force. MSc in Big Data & AI from the University of Athens.
+
+## Pages
+
+- [Home](https://alexzerntev.github.io/): who Alex is, selected work with verifiable links, and how to get in touch
+- [Blog](https://alexzerntev.github.io/blog/): notes on coding agents, production agents, and the judgment calls behind them
+- [Rebuilding this site with coding agents](https://alexzerntev.github.io/blog/rebuilding-this-site-with-coding-agents/): what stayed human while rebuilding this website with coding agents
+
+## Selected work
+
+- [Constrained Space, Better Code](https://raw-labs.com/blog/constrained-space-better-code/): controlled 9-tool comparison; with MXCP, Claude Code produced 65% less code and used 70% fewer output tokens than with a plain MCP implementation
+- [MXCP](https://mxcp.dev/): framework for production MCP servers with security, validation, testing, audit trails, and observability built in
+- [Development of just-in-time query operators](https://pergamos.lib.uoa.gr/item/uoadl:3395963): University of Athens repository record
+- [Semantically assisted loop closure in SLAM](https://iliad-project.eu/publications/2019-2/semantically-assisted-loop-closure-in-slam-using-ndt-histograms/): co-authored research, IROS 2019
+
+## Profiles
+
+- [GitHub](https://github.com/alexzerntev)
+- [LinkedIn](https://www.linkedin.com/in/alexzerntev)
+- [X](https://x.com/alexzerntev)
+- [RSS feed](https://alexzerntev.github.io/rss.xml)
