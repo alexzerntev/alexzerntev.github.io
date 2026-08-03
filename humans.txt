@@ -1,7 +1,6 @@
 /* HUMAN */
 Name: Alex Zerntev
 Role: AI Engineer
-Location: Athens, Greece
 LinkedIn: linkedin.com/in/alexzerntev
 GitHub: github.com/alexzerntev
 

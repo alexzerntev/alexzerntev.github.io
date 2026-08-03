@@ -1,6 +1,6 @@
 # Alex Zerntev
 
-> Personal site and blog of Alex Zerntev, AI Engineer at RAW Labs (Athens, Greece). The work: coding agents in the development loop, AI agents in production, and the engineering judgment in between.
+> Personal site and blog of Alex Zerntev, AI Engineer at RAW Labs. The work: coding agents in the development loop, AI agents in production, and the engineering judgment in between.
 
 Alex spent four years at RAW Labs across the Snapi query language (parser, semantic analysis, GraalVM/Truffle execution), the RAW web product, and VS Code tooling, and now works on production AI agents and MXCP, a framework for building production MCP servers. Before that: a decade of building document, healthcare, and HR software for the military, which started with service in the Hellenic Air Force. MSc in Big Data & AI from the University of Athens.
 
