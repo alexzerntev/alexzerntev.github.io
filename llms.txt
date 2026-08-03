@@ -6,17 +6,14 @@ Alex spent four years at RAW Labs across the Snapi query language (parser, seman
 
 ## Pages
 
-- [Home](https://alexzerntev.github.io/): who Alex is, selected work with verifiable links, and how to get in touch
+- [Home](https://alexzerntev.github.io/): who Alex is, a favorite Bruce Lee quote, and how to get in touch
 - [Blog](https://alexzerntev.github.io/blog/): notes on coding agents, production agents, and the judgment calls behind them
 - [Reality Doesn’t Fit in a Prompt](https://alexzerntev.github.io/blog/reality-doesnt-fit-in-a-prompt/): why information alone does not determine what matters, and where human judgment enters
 - [Rebuilding this site with coding agents](https://alexzerntev.github.io/blog/rebuilding-this-site-with-coding-agents/): what stayed human while rebuilding this website with coding agents
 
-## Selected work
+## Perspective
 
-- [Constrained Space, Better Code](https://raw-labs.com/blog/constrained-space-better-code/): controlled 9-tool comparison; with MXCP, Claude Code produced 65% less code and used 70% fewer output tokens than with a plain MCP implementation
-- [MXCP](https://mxcp.dev/): framework for production MCP servers with security, validation, testing, audit trails, and observability built in
-- [Development of just-in-time query operators](https://pergamos.lib.uoa.gr/item/uoadl:3395963): University of Athens repository record
-- [Semantically assisted loop closure in SLAM](https://iliad-project.eu/publications/2019-2/semantically-assisted-loop-closure-in-slam-using-ndt-histograms/): co-authored research, IROS 2019
+- The homepage features Alex's favorite Bruce Lee quote about moving beyond plateaus.
 
 ## Profiles
 
