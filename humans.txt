@@ -1,10 +1,10 @@
 /* HUMAN */
 Name: Alex Zerntev
-Role: AI Engineer
+Role: Senior AI Engineer
 LinkedIn: linkedin.com/in/alexzerntev
 GitHub: github.com/alexzerntev
 
 /* SITE */
 Built with: Astro, HTML, CSS, TypeScript
 Language: English
-Last updated: 2026/07/21
+Last updated: 2026/10/05
