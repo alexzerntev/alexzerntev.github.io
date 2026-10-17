@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <title>Alex Zerntev — horizon</title>
+  <rect width="72" height="72" rx="15" fill="#0b0c0c"/>
+  <path d="M18 37a18 18 0 0 1 36 0Z" fill="#faf6ed"/>
+  <rect x="13" y="42" width="46" height="3" rx="1.5" fill="#faf6ed"/>
+  <path d="M25 50h22q-11 9-22 0Z" fill="#faf6ed"/>
+</svg>
