@@ -19,5 +19,5 @@ Alex spent four years at RAW Labs across the Snapi query language (parser, seman
 
 - [GitHub](https://github.com/alexzerntev)
 - [LinkedIn](https://www.linkedin.com/in/alexzerntev)
-- [X](https://x.com/alexzerntev)
+- [X](https://x.com/alexyz)
 - [RSS feed](https://alexzerntev.github.io/rss.xml)
