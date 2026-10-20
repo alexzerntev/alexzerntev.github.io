@@ -8,6 +8,7 @@ Alex spent four years at RAW Labs across the Snapi query language (parser, seman
 
 - [Home](https://alexzerntev.github.io/): who Alex is, a favorite Bruce Lee quote, and how to get in touch
 - [Blog](https://alexzerntev.github.io/blog/): notes on coding agents, production agents, and the judgment calls behind them
+- [Old Software, New Hands](https://alexzerntev.github.io/blog/old-software-new-hands/): why existing software remains valuable as AI agents take on more of the work of operating it
 - [Reality Doesn’t Fit in a Prompt](https://alexzerntev.github.io/blog/reality-doesnt-fit-in-a-prompt/): why information alone does not determine what matters, and where human judgment enters
 - [Rebuilding this site with coding agents](https://alexzerntev.github.io/blog/rebuilding-this-site-with-coding-agents/): what stayed human while rebuilding this website with coding agents
 
