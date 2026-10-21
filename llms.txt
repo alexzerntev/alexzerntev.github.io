@@ -2,7 +2,7 @@
 
 > Personal site and blog of Alex Zerntev, Senior AI Engineer at RAW Labs. His work spans AI agents, full-stack applications, and developer tools, including backend systems and user interfaces. Coding agents are part of his development workflow.
 
-Alex spent four years at RAW Labs across the Snapi query language (parser, semantic analysis, GraalVM/Truffle execution), the RAW web product, and VS Code tooling, and now works on production AI agents and MXCP, a framework for building production MCP servers. Before that: a decade of building document, healthcare, and HR software for the military, which started with service in the Hellenic Air Force. MSc in Big Data & AI from the University of Athens.
+Alex joined RAW Labs in 2021, working on data platforms and their web interfaces, the Snapi query language, and developer tooling. He also builds AI agents for enterprise customers, with a focus on reliability and security in production. His career began with service in the Hellenic Air Force, followed by building military-grade software for document management, healthcare, and HR. He holds a BSc in Computer Science and an MSc in Data Science and Information Technologies, specializing in Big Data and AI, from the University of Athens.
 
 ## Pages
 
