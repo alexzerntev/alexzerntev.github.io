@@ -6,7 +6,7 @@ Alex joined RAW Labs in 2021, working on data platforms and their web interfaces
 
 ## Pages
 
-- [Home](https://alexzerntev.github.io/): who Alex is, a favorite Bruce Lee quote, and how to get in touch
+- [Home](https://alexzerntev.github.io/): who Alex is, a favorite Bruce Lee quote, conferences, and how to get in touch
 - [Blog](https://alexzerntev.github.io/blog/): notes on coding agents, production agents, and the judgment calls behind them
 - [Old Software, New Hands](https://alexzerntev.github.io/blog/old-software-new-hands/): why existing software remains valuable as AI agents take on more of the work of operating it
 - [Reality Doesn’t Fit in a Prompt](https://alexzerntev.github.io/blog/reality-doesnt-fit-in-a-prompt/): why information alone does not determine what matters, and where human judgment enters
